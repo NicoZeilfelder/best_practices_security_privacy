@@ -47,21 +47,30 @@ Durch Scans oder manuelle Analysen können Angreifer die entsprechende Systemver
 10) Ungeprüfte Um- und Weiterleitung   
 Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schad-Code.
 
-
+Quelle: [1] [2]
 
 ## Gegenmaßnahmen
 
+### Native Anwendungen
+
+### Web-Anwendungen
+
+|Sicherheitslücke|Gegenmaßnahmen|
+|---|---|
+|(Code-/ SQL-) Injection|
+| Fehler in Authentisierung und Session Management |
+
+
+
+
 ## Native Anwendungen vs. Web-Applikationen
 
-|Kategorie|Native Applikationen| Web-Applikationen|
-|-------------|------------------------------|-----------------------------|
-| a | b | c |
+
 
 
 Literaturverzeichnis:
 
-[1] https://www.owasp.org/index.php/Main_Page
+[1] https://www.owasp.org/index.php/Main_Page   
+[2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf   
 
-[2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf
 
-[3] http://blog.brandung.de/die-10-haeufigsten-sicherheitsrisiken
