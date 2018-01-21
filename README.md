@@ -56,13 +56,13 @@
 |---|---|
 |(Code-/ SQL-) Injection|Nutzung von APIs ohne Interpreter, Maskierung spezieller Zeichen, Längenbeschränkung der Eingaben, usw.|
 |Fehler in Authentisierung und Session Management |Multi-Faktor Authentisierung, Tests zur Stärke des Passworts, Passwort-Policy (vorgegebene Passwort-Länge, Eigenschaften und regelmäßige Aktualisierung), usw.|
-|Cross Site Scripting (XSS)||   
-|Unsichere direkte Objektreferenzen||   
-|Sicherheitsrelevante Fehlkonfigurationen||
+|Cross Site Scripting (XSS)|Frameworks zur Maskierung von XSS, Reduzierung nicht vertrauenswürdiger HTTP-Anfragen, Einführung einer Content Security Policy, usw.|   
+|Unsichere direkte Objektreferenzen|Reduzierung komplexer Dateiformate wie JSON, Implementierung einer Server-Side Input Validation, usw.|   
+|Sicherheitsrelevante Fehlkonfigurationen| Entfernen und Deinstallation nicht benötigter Anwendungen und Frameworks, Einheitliche Konfiguration der Systemlandschaft, usw.|
 |Verlust der Vertraulichkeit sensibler Daten||
 |Fehlerhafte Autorisierung auf Anwendungsebene||
 |Cross-Site Request Forgery (CSRF)||
-|Nutzung von Komponenten mit bekannten Schwachstelle||
+|Nutzung von Komponenten mit bekannten Schwachstelle|Entfernen ungenutzer Abhängigkeiten/ Features/ Komponenten/ Dateien, Überwachung und Update der Client- und Server-seitigen Komponenten, usw.|
 |Ungeprüfte Um- und Weiterleitung||
 
 ## Native Anwendungen vs. Web-Applikationen
@@ -70,6 +70,7 @@
 ## Literaturverzeichnis
 
 [1] https://www.owasp.org/index.php/Main_Page   
-[2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf   
+[2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf  
+[3] https://developer.android.com/training/articles/security-tips.html#StoringData
 
 
