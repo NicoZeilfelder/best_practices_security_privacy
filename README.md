@@ -8,11 +8,11 @@
 
 ### Web-Anwendungen: 
 
-##### 1) (Code-/ SQL-) Injection   
+#### 1) (Code-/ SQL-) Injection   
 > Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhalb der Datenbank in Form von Befehlen ausgeführt werden. Dadurch ist es dem Angreifer möglich die Daten in der Datenbank zu kopieren, zu entfernen oder zu manipulieren. Im Extremfall kann dieser gegebenefalls das ganze System übernehmen.   
 
    
-2) Fehler in Authentisierung und Session Management   
+#### 2) Fehler in Authentisierung und Session Management   
 > Durch Fehler in der Authentisierung oder Fehler im Session Management kann ein Angreifer die Identität eines Benutzers erlangen und dadurch auf dessen Daten zugreifen und bestimmte Transaktionen in dessen Namen tätigen.   
 
    
