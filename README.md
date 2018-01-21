@@ -18,6 +18,8 @@ Native Anwendungen:
 Web-Anwendungen:
 
 |Angriff/ Sicherheitslücke|Beschreibung|
+|-------------------------|------------|
+|Injection|Daten aus Formularen und Parametern werden lokal über den Browser|
 
 ## Gegenmaßnahmen
 
