@@ -1,7 +1,5 @@
 # Best Practices for Security and Privacy
 
-## Kategorisierung 
-
 ## Häufige Probleme
 
 ### Native Anwendungen:
@@ -66,9 +64,12 @@
 |Fehlerhafte Autorisierung auf Anwendungsebene| Ablehnung der Zugriffsrechte per Default-Einstellung, Implementierung einer Zugriffskontrolle, usw.|
 |Cross-Site Request Forgery (CSRF)|Implementierung von Integritätsprüfungen, Einschränkung und Überwachung ein- und ausgehenden Netzwerkverkehrs, usw.|
 |Nutzung von Komponenten mit bekannten Schwachstelle|Entfernen ungenutzer Abhängigkeiten/ Features/ Komponenten/ Dateien, Überwachung und Update der Client- und Server-seitigen Komponenten, usw.|
-|Ungeprüfte Um- und Weiterleitung||
+|Ungeprüfte Um- und Weiterleitung|Prüfung auf Weiterleitung, Unterbindung der Weiterleitung, Überwachung der Webseite, usw.|
 
 ## Native Anwendungen vs. Web-Applikationen
+
+|Kategorie|Native Anwendungen|Web-Anwendungen|
+|---|---|---|
 
 ## Literaturverzeichnis
 
