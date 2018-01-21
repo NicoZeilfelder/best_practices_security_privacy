@@ -17,7 +17,7 @@ Native Anwendungen:
 
 Web-Anwendungen:
 
-| Angriff/ Sicherheitslücke | Beschreibung |
+|Angriff/ Sicherheitslücke|Beschreibung|
 
 ## Gegenmaßnahmen
 
