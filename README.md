@@ -19,7 +19,11 @@ Web-Anwendungen:
 
 |Angriff/ Sicherheitslücke|Beschreibung|
 |-------------------------|------------|
-|Injection|Daten aus Formularen und Parametern werden lokal über den Browser|
+|Injection|Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhlab der Datenbank in Form von Befehlen ausgeführt werden.
+Mögliche Gefahren:
+* Manpiulation, Kopie oder Löschen der Daten
+* Systemübernahme|
+
 
 ## Gegenmaßnahmen
 
