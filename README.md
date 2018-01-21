@@ -8,7 +8,16 @@ Android stellt etwaige Sicherheits-Features zur Verfügung, welche zu einer sign
 
 
 
+
 ## Häufige Probleme
+
+Native Anwendungen:
+
+
+
+Web-Anwendungen:
+
+| Angriff/ Sicherheitslücke | Beschreibung |
 
 ## Gegenmaßnahmen
 
