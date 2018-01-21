@@ -1,24 +1,15 @@
 # Best Practices for Security and Privacy
 
-Android stellt etwaige Sicherheits-Features zur Verfügung, welche zu einer signifikanten Reduzierung der Häufigkeit und Auswirkungen von Sicherheitslücken beitragen. Mögliche Kernfeatures zur Schließung der Sicherheitslücken sind beispielsweise
-
-* gaga
-
 ## Kategorisierung 
-
-
-
 
 ## Häufige Probleme
 
 ### Native Anwendungen:
 
-
-
 ### Web-Anwendungen: 
 
 1) (Code-/ SQL-) Injection   
-Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhalb der Datenbank in Form von Befehlen ausgeführt werden. Dadurch ist es dem Angreifer möglich die Daten in der Datenbank zu kopieren, zu entfernen oder zu manipulieren. Im Extremfall kann dieser gegebenefalls das ganze System übernehmen.
+> Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhalb der Datenbank in Form von Befehlen ausgeführt werden. Dadurch ist es dem Angreifer möglich die Daten in der Datenbank zu kopieren, zu entfernen oder zu manipulieren. Im Extremfall kann dieser gegebenefalls das ganze System übernehmen.
 
 2) Fehler in Authentisierung und Session Management   
 Durch Fehler in der Authentisierung oder Fehler im Session Management kann ein Angreifer die Identität eines Benutzers erlangen und dadurch auf dessen Daten zugreifen und bestimmte Transaktionen in dessen Namen tätigen.
