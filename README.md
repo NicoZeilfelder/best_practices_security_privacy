@@ -59,9 +59,9 @@
 |Cross Site Scripting (XSS)|Frameworks zur Maskierung von XSS, Reduzierung nicht vertrauenswürdiger HTTP-Anfragen, Einführung einer Content Security Policy, usw.|   
 |Unsichere direkte Objektreferenzen|Reduzierung komplexer Dateiformate wie JSON, Implementierung einer Server-Side Input Validation, usw.|   
 |Sicherheitsrelevante Fehlkonfigurationen| Entfernen und Deinstallation nicht benötigter Anwendungen und Frameworks, Einheitliche Konfiguration der Systemlandschaft, usw.|
-|Verlust der Vertraulichkeit sensibler Daten||
-|Fehlerhafte Autorisierung auf Anwendungsebene||
-|Cross-Site Request Forgery (CSRF)||
+|Verlust der Vertraulichkeit sensibler Daten|Keine unnötigerweise Speicherung sensibler Daten, Verschlüsselung sensiler Daten, Gewährleistung aktueller und moderner Verschlüssellungsstandards, usw.|
+|Fehlerhafte Autorisierung auf Anwendungsebene| Ablehnung der Zugriffsrechte per Default-Einstellung, Implementierung einer Zugriffskontrolle, usw.|
+|Cross-Site Request Forgery (CSRF)|Implementierung von Integritätsprüfungen, Einschränkung und Überwachung ein- und ausgehenden Netzwerkverkehrs, usw.|
 |Nutzung von Komponenten mit bekannten Schwachstelle|Entfernen ungenutzer Abhängigkeiten/ Features/ Komponenten/ Dateien, Überwachung und Update der Client- und Server-seitigen Komponenten, usw.|
 |Ungeprüfte Um- und Weiterleitung||
 
