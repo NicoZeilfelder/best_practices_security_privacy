@@ -48,8 +48,8 @@ Quelle: [1] [2]
 
 |Sicherheitslücke|Gegenmaßnahmen|
 |---|---|
-|(Code-/ SQL-) Injection||
-|Fehler in Authentisierung und Session Management ||
+|(Code-/ SQL-) Injection|Nutzung von APIs ohne Interpreter, Maskierung spezieller Zeichen, Längenbeschränkung der Eingaben, usw.|
+|Fehler in Authentisierung und Session Management |Multi-Faktor Authentisierung, Tests zur Stärke des Passworts, Passwort-Policy, usw.|
 |Cross Site Scripting (XSS)||   
 |Unsichere direkte Objektreferenzen||   
 |Sicherheitsrelevante Fehlkonfigurationen||
@@ -61,7 +61,7 @@ Quelle: [1] [2]
 
 ## Native Anwendungen vs. Web-Applikationen
 
-Literaturverzeichnis:
+## Literaturverzeichnis
 
 [1] https://www.owasp.org/index.php/Main_Page   
 [2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf   
