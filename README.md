@@ -55,7 +55,7 @@ Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass teilwei
 
 |Sicherheitslücke|Gegenmaßnahmen|
 |---|---|
-|Angriffe auf Endgeräte| Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
+|Angriffe auf Endgeräte| |
 Angriffe auf Netzwerke||
 
 ### Web-Anwendungen
