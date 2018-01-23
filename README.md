@@ -4,7 +4,7 @@
 
 ### Native Anwendungen:
 
-1) Angriffe auf Endgeräte
+/1) Angriffe auf Endgeräte
 
 2) Angriffe auf das Netzwerk
 
