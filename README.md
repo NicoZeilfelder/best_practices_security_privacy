@@ -58,7 +58,7 @@
 |(Code-/ SQL-) Injection|Nutzung von APIs ohne Interpreter, Maskierung spezieller Zeichen, Längenbeschränkung der Eingaben, usw.|
 |Fehler in Authentisierung und Session Management |Multi-Faktor Authentisierung, Tests zur Stärke des Passworts, Passwort-Policy (vorgegebene Passwort-Länge, -Eigenschaften und regelmäßige Aktualisierung), usw.|
 |Cross Site Scripting (XSS)|Frameworks zur Maskierung von XSS, Reduzierung nicht vertrauenswürdiger HTTP-Anfragen, Einführung einer Content Security Policy, usw.|   
-|Unsichere direkte Objektreferenzen|Reduzierung komplexer Dateiformate wie JSON, Implementierung einer Server-Side Input Validation, usw.|   
+|Unsichere direkte Objektreferenzen|Reduzierung komplexer Dateiformate wie JSON, Implementierung einer Server-Side Input Validation, Authentifizierung je HTTP-Anfrage, Authentisierung mit Cookies usw.|   
 |Sicherheitsrelevante Fehlkonfigurationen| Entfernen und Deinstallation nicht benötigter Anwendungen und Frameworks, Einheitliche Konfiguration der Systemlandschaft, usw.|
 |Verlust der Vertraulichkeit sensibler Daten|Keine unnötige Speicherung sensibler Daten, Verschlüsselung sensibler Daten, Gewährleistung aktueller und moderner Verschlüssellungsstandards, usw.|
 |Fehlerhafte Autorisierung auf Anwendungsebene| Ablehnung der Zugriffsrechte per Default-Einstellung, Implementierung einer Zugriffskontrolle, usw.|
