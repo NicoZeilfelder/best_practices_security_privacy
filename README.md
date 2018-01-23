@@ -8,7 +8,9 @@
 
 > Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass teilweise andere Anwendungen auf die auf dem Gerät gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global sowohl lesend als auch schreibend adressiert werden. Des Weiteren stellt auch die Exportfähigkeit externer Medien, wie z.B. von SD-Karten ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf die Daten zu erzwingen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen beschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich Angriffe, wie z.B. Code Injection, auszuführen.
 
-.) Angriffe auf das Netzwerk
+2. Angriffe auf das Netzwerk
+
+> Die zweite große Alternative der Angriffe auf native Anwendungen besteht in einem Angriff über das Netzwerk. Dieser ist aus Sicherheitsaspekten sehr riskant, da hierbei potentiell sensible Daten über das Netzwerk übertragen und abgefangen werden können. Diese Art von Angriffen können sowohl über das Internet als auch lokale Netze, wie z.B. öffentliche, unsichere Wi-Fi Hotspots, mit denen sich die Endgeräte automatisch verbinden. Diese können letztendlich dazu manipuliert werden, um den Netzwerkverkehr mitzulesen und an die Daten der Endanwender zu gelangen.
 
 ### Web-Anwendungen: 
 
@@ -56,7 +58,7 @@
 |Sicherheitslücke|Gegenmaßnahmen|
 |---|---|
 |Angriffe auf Endgeräte|Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
-Angriffe auf Netzwerke||
+Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokolle (z.B. HTTPS statt HTTP), Pinning, usw.|
 
 ### Web-Anwendungen
 
