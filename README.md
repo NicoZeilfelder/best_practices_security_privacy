@@ -6,7 +6,9 @@
 
 1. Angriffe auf Endgeräte
 
-> Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass andere Anwendungen (teilweise) auf die auf dem Gerät gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global (sowohl lesend als auch schreibend) angesprochen werden. Des Weiteren stellt die Exportfähigkeit externer Medien, wie z.B. von SD-Karten, ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf diese direkt im Speicher auszuführen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen einschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich, Angriffe, wie z.B. Code Injection, auszuführen.
+   > Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass andere Anwendungen (teilweise) auf die auf dem Gerät        gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global (sowohl lesend als auch schreibend) angesprochen werden. Des Weiteren stellt die Exportfähigkeit externer Medien, wie z.B. von SD-Karten, ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf diese direkt im Speicher auszuführen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen einschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich, Angriffe, wie z.B. Code Injection, auszuführen.
+
++ test 
 
 2. Angriffe auf das Netzwerk
 
