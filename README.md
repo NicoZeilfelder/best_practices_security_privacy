@@ -55,6 +55,8 @@ Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass teilwei
 
 |Sicherheitslücke|Gegenmaßnahmen|
 |---|---|
+|Angriffe auf Endgeräte| Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
+Angriffe auf Netzwerke||
 
 ### Web-Anwendungen
 
@@ -75,16 +77,14 @@ Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass teilwei
 
 |Kategorie|Native Anwendungen|Web-Anwendungen|
 |---|---|---|
-|Angriffe auf Endgeräte| Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
-Angriffe auf Netzwerke||
 
 
 ## Literaturverzeichnis
 
-[1] https://developer.android.com/training/articles/security-tips.html#StoringData
-[2] https://developer.android.com/training/articles/security-ssl.html
+[1] https://developer.android.com/training/articles/security-tips.html#StoringData   
+[2] https://developer.android.com/training/articles/security-ssl.html   
 [3] https://www.owasp.org/index.php/Main_Page   
-[4] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf  
+[4] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf   
 
 
 
