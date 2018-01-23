@@ -52,6 +52,8 @@
 10) Ungeprüfte Um- und Weiterleitung   
    > Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
 
++
+
 ## Gegenmaßnahmen
 
 ### Native Anwendungen
