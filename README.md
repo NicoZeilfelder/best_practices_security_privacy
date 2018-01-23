@@ -6,16 +6,17 @@
 
 1. Angriffe auf Endgeräte
 
-> Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass teilweise andere Anwendungen auf die auf dem Gerät gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global sowohl lesend als auch schreibend adressiert werden. Des Weiteren stellt auch die Exportfähigkeit externer Medien, wie z.B. von SD-Karten ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf die Daten zu erzwingen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen beschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich Angriffe, wie z.B. Code Injection, auszuführen.
+> Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass andere Anwendungen (teilweise) auf die auf dem Gerät gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global (sowohl lesend als auch schreibend) angesprochen werden. Des Weiteren stellt die Exportfähigkeit externer Medien, wie z.B. von SD-Karten, ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf diese direkt im Speicher auszuführen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen einschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich, Angriffe, wie z.B. Code Injection, auszuführen.
 
 2. Angriffe auf das Netzwerk
 
-> Die zweite große Alternative der Angriffe auf native Anwendungen besteht in einem Angriff über das Netzwerk. Dieser ist aus Sicherheitsaspekten sehr riskant, da hierbei potentiell sensible Daten über das Netzwerk übertragen und abgefangen werden können. Diese Art von Angriffen können sowohl über das Internet als auch lokale Netze, wie z.B. öffentliche, unsichere Wi-Fi Hotspots, mit denen sich die Endgeräte automatisch verbinden. Diese können letztendlich dazu manipuliert werden, um den Netzwerkverkehr mitzulesen und an die Daten der Endanwender zu gelangen.
+> Eine weitere Alternative in Bezug auf native Anwendungen besteht in einem Angriff über das Netzwerk. Dieser ist aus Sicherheitsaspekten sehr riskant, da hierbei potentiell sensible Daten über das Netzwerk übertragen und abgefangen werden können. Diese Art von Angriffen können sowohl über das Internet als auch lokale Netze, wie z.B. öffentliche bzw. unsichere Wi-Fi Hotspots, mit denen sich die Endgeräte automatisch verbinden, erfolgen. Diese können dazu manipuliert werden, um den Netzwerkverkehr mitzulesen oder um an die Daten der Endanwender zu gelangen.
 
 ### Web-Anwendungen: 
 
 1. (Code-/ SQL-) Injection
-> Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhalb der Datenbank in Form von Befehlen ausgeführt werden. Dadurch ist es dem Angreifer möglich die Daten in der Datenbank zu kopieren, zu entfernen oder zu manipulieren. Im Extremfall kann dieser gegebenefalls das ganze System übernehmen.   
+> Daten aus Formularen und Parametern werden lokal über den Browser abgesendet und in eine Datenbank eingepflegt. Diese Daten können dann innerhalb der Datenbank in Form von Befehlen ausgeführt werden. Dadurch ist es dem Angreifer möglich die Daten in der Datenbank zu kopieren, zu entfernen oder zu manipulieren. Im Extremfall kann dieser das ganze System übernehmen.   
+   
    
 2. Fehler in Authentisierung und Session Management
 > Durch Fehler in der Authentisierung oder Fehler im Session Management kann ein Angreifer die Identität eines Benutzers erlangen und dadurch auf dessen Daten zugreifen und bestimmte Transaktionen in dessen Namen tätigen.   
@@ -30,7 +31,7 @@
 
    
 5) Sicherheitsrelevante Fehlkonfigurationen   
->Durch die öffentliche Anzeiche von Systemfehlermeldungen können die Angreifer an wertvolle Informationen gelangen, welche zur Ausnutzung von Sicherheitslücken bis hin zu Systemübernahme eingesetzt werden können.   
+>Durch die öffentliche Anzeige von Systemfehlermeldungen können die Angreifer an wertvolle Informationen gelangen, welche zur Ausnutzung von Sicherheitslücken bis hin zur Systemübernahme eingesetzt werden können.   
 
 
 6) Verlust der Vertraulichkeit sensibler Daten   
@@ -38,18 +39,18 @@
 
    
 7) Fehlerhafte Autorisierung auf Anwendungsebene   
-> Die Realisierung der Zugriffskontrolle erfolgt ausschließlich über das Anzeigen und Ausblenden von Funktionen innerhalb der Benutzeroberfläche. Da der direkte Zugriff auf diese Funktionen ungeprüft bleibt, können Angreifer diese dennoch ausführen und Schaden enrichten.   
+> Die Realisierung der Zugriffskontrolle erfolgt ausschließlich über das Anzeigen und Ausblenden von Funktionen auf der Benutzeroberfläche. Da der direkte Zugriff auf diese Funktionen ungeprüft bleibt, können Angreifer diese dennoch ausführen und Schaden enrichten.   
 
    
 8) Cross-Site Request Forgery (CSRF)   
-> Unter einem CSRF-Angriff wird der Versand von maniulierten HTTP-Anfragen verstanden. Diese Anfragen werden in der Regel in der Anwendung bzw. im Browser des Opfers ausgeführt, währenddessen dieser eingeloggt ist. Durch diese Sicherheitslücke ist der Angreifer in der Lage Transaktionen im Namen des angemeldeten Opfers auszuführen.   
+> Unter einem CSRF-Angriff wird der Versand von maniulierten HTTP-Anfragen verstanden. Diese Anfragen werden in der Regel in der Anwendung bzw. im Browser des Opfers ausgeführt, während dieser eingeloggt ist. Durch diese Sicherheitslücke ist der Angreifer in der Lage Transaktionen im Namen des angemeldeten Opfers auszuführen.   
 
    
 9) Nutzung von Komponenten mit bekannten Schwachstelle   
 > Durch Scans oder manuelle Analysen können Angreifer die entsprechende Systemversion von Applikationen identifizieren. Sofern es in der entsprechenden Version etwaige Sicherheitslücken gibt, ist das System durch diese angreifbar.   
    
 10) Ungeprüfte Um- und Weiterleitung   
-> Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schad-Code.   
+> Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
 
 ## Gegenmaßnahmen
 
