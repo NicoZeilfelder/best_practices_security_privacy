@@ -4,6 +4,10 @@
 
 ### Native Anwendungen:
 
+1) Angriffe auf Endgeräte
+
+2) Angriffe auf das Netzwerk
+
 ### Web-Anwendungen: 
 
 1) (Code-/ SQL-) Injection   
@@ -73,8 +77,10 @@
 
 ## Literaturverzeichnis
 
-[1] https://www.owasp.org/index.php/Main_Page   
-[2] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf  
-[3] https://developer.android.com/training/articles/security-tips.html#StoringData
+[1] https://developer.android.com/training/articles/security-tips.html#StoringData
+[2] https://developer.android.com/training/articles/security-ssl.html
+[3] https://www.owasp.org/index.php/Main_Page   
+[4] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf  
+
 
 
