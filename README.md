@@ -16,13 +16,13 @@
 
    > Ein weiteres Problem stellt eine mangelnde Eingabevalidierung dar, welche unabhängig von der genutzten Plattform in etwa gleich häufig vorkommt. Die Nutzung von nativem Quellcode kann in fast jeder Anwendung, zum Beispiel durch das Lesen von Dateien oder auch durch die Datenübertragung über das Netzwerk, eine Sicherheitslücke darstellen. Im Umgang mit nativen Applikationen treten einige besondere Angriffe bzw. Sicherheitslücken gesondert auf.
 
-   a) a[Buffer Overflow](https://de.wikipedia.org/wiki/Pufferüberlauf)   
+   a) [Buffer Overflow](https://de.wikipedia.org/wiki/Pufferüberlauf)   
 
-      	> Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
+      > Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
 
-   b) a[Off-By-One Error](https://de.wikipedia.org/wiki/Off-by-one-Error)   
+   b) [Off-By-One Error](https://de.wikipedia.org/wiki/Off-by-one-Error)   
    
-      > Ein Off-By-One Error kann bei nativen Anwendungen auftreten und kennzeichnet sich vor allem dadurch, dass die angegebene Speicher- oder Pufferadresse um den Wert eins von der eigentlichen Adresse abweicht. Dadurch wird die Daten der entsprechenden Speicher-/ Pufferstelle überschrieben und es kommt zum Datenverlust und zu Inkonsistenzen. 
+   > Ein Off-By-One Error kann bei nativen Anwendungen auftreten und kennzeichnet sich vor allem dadurch, dass die angegebene Speicher- oder Pufferadresse um den Wert eins von der eigentlichen Adresse abweicht. Dadurch wird die Daten der entsprechenden Speicher-/ Pufferstelle überschrieben und es kommt zum Datenverlust und zu Inkonsistenzen. 
 
 ### Web-Anwendungen: 
 
@@ -63,8 +63,6 @@
    
 10) Ungeprüfte Um- und Weiterleitung   
    > Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
-
-+
 
 ## Gegenmaßnahmen
 
