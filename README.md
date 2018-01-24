@@ -6,7 +6,7 @@
 
 1. Angriffe auf Endgeräte
 
-   > Das Hauptproblem in der Speicherverwaltung von Android liegt darin, dass andere Anwendungen (teilweise) auf die auf dem Gerät        gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global (sowohl lesend als auch schreibend) angesprochen werden. Des Weiteren stellt die Exportfähigkeit externer Medien, wie z.B. von SD-Karten, ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf diese direkt im Speicher auszuführen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen einschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich, Angriffe, wie z.B. Code Injection, auszuführen.
+   > Das Hauptproblem in der Speicherverwaltung von Android besteht darin, dass andere Anwendungen (teilweise) auf die auf dem Gerät        gespeicherten Daten zugreifen können. Android unterscheidet hierbei zunächst in einen internen und einen externen Speicher. Obwohl die im internen Speicher hinterlegten Daten nur von der jeweiligen Applikation selbst adressiert werden können, kann der externe Speicher global (sowohl lesend als auch schreibend) angesprochen werden. Des Weiteren stellt die Exportfähigkeit externer Medien, wie z.B. von SD-Karten, ein großes Problem dar. Neben dem Datendiebstahl ist es aber auch möglich ausführbare Dateien durch einen Zugriff auf diese direkt im Speicher auszuführen. Content Providers  bieten einen strukturierten Speichermechanismus an, welcher den Zugriff auf die eigene Applikation oder den Zugriff durch andere Anwendungen einschränkt. Durch das Hinzufügen von Berechtigungen, die nicht zwangsläufig erforderlich sind, ist es letztendlich möglich, Angriffe, wie z.B. Code Injection, auszuführen.
 
 2. Angriffe auf das Netzwerk
 
@@ -18,7 +18,7 @@
 
    a) [Buffer Overflow](https://de.wikipedia.org/wiki/Pufferüberlauf)   
 
-      > Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
+      > Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, welche die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgende Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
 
    b) [Off-By-One Error](https://de.wikipedia.org/wiki/Off-by-one-Error)   
    
@@ -51,7 +51,7 @@
 
    
 7) Fehlerhafte Autorisierung auf Anwendungsebene   
-   > Die Realisierung der Zugriffskontrolle erfolgt ausschließlich über das Anzeigen und Ausblenden von Funktionen auf der Benutzeroberfläche. Da der direkte Zugriff auf diese Funktionen ungeprüft bleibt, können Angreifer diese dennoch ausführen und Schaden enrichten.   
+   > Die Realisierung der Zugriffskontrolle erfolgt ausschließlich über das Anzeigen und Ausblenden von Funktionen auf der Benutzeroberfläche. Da der direkte Zugriff auf diese Funktionen ungeprüft bleibt, können Angreifer diese dennoch ausführen und Schaden anrichten.   
 
    
 8) Cross-Site Request Forgery (CSRF)   
@@ -62,8 +62,7 @@
    > Durch Scans oder manuelle Analysen können Angreifer die entsprechende Systemversion von Applikationen identifizieren. Sofern es in der entsprechenden Version etwaige Sicherheitslücken gibt, ist das System durch diese angreifbar.   
    
 10) Ungeprüfte Um- und Weiterleitung   
-   > Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
-
+   >> Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
 
 
 ## Gegenmaßnahmen
@@ -77,6 +76,7 @@ Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokol
 |Buffer Overflow|Verwendung typischer Programmiersprachen und -werkzeuge, Einsatz spezieller Überprüfungswerkzeuge zur Analyse des Codes, Nutzung moderner Compiler, usw.|
 |Off-By-One Error|Sehr schwierige Identifikation, manueller Code-Review, ausgiebiges Testen, usw.|
 
+
 ### Web-Anwendungen
 
 |Sicherheitslücke|Gegenmaßnahmen|
@@ -88,9 +88,10 @@ Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokol
 |Sicherheitsrelevante Fehlkonfigurationen| Entfernen und Deinstallation nicht benötigter Anwendungen und Frameworks, Einheitliche Konfiguration der Systemlandschaft, usw.|
 |Verlust der Vertraulichkeit sensibler Daten|Keine unnötige Speicherung sensibler Daten, Verschlüsselung sensibler Daten, Gewährleistung aktueller und moderner Verschlüssellungsstandards, usw.|
 |Fehlerhafte Autorisierung auf Anwendungsebene| Ablehnung der Zugriffsrechte per Default-Einstellung, Implementierung einer Zugriffskontrolle, usw.|
-|Cross-Site Request Forgery (CSRF)|Implementierung von Integritätsprüfungen, Einschränkung und Überwachung ein- und ausgehenden Netzwerkverkehrs, usw.|
+|Cross-Site Request Forgery (CSRF)|Implementierung von Integritätsprüfungen, Einschränkung und Überwachung des ein- und ausgehenden Netzwerkverkehrs, usw.|
 |Nutzung von Komponenten mit bekannten Schwachstelle|Entfernen ungenutzer Abhängigkeiten/ Features/ Komponenten/ Dateien, Überwachung und Update der Client- und Server-seitigen Komponenten, usw.|
 |Ungeprüfte Um- und Weiterleitung|Prüfung auf Weiterleitung, Unterbindung der Weiterleitung, Überwachung der Webseite, usw.|
+
 
 ## Native Anwendungen vs. Web-Applikationen
 
@@ -111,6 +112,3 @@ Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokol
 [4] https://de.wikipedia.org/wiki/Off-by-one-Error   
 [5] https://www.owasp.org/index.php/Main_Page   
 [6] https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf   
-
-
-
