@@ -72,8 +72,8 @@
 |---|---|
 |Angriffe auf Endgeräte|Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
 Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokolle (z.B. HTTPS statt HTTP), Pinning, usw.|
-|Buffer Overflow||
-|Off-By-One Error||
+|Buffer Overflow|Verwendung typischer Programmiersprachen und -werkzeuge, Einsatz spezieller Überprüfungswerkzeuge zur Analyse des Codes, Nutzung moderner Compiler, usw.|
+|Off-By-One Error|Sehr schwierige Identifikation, manueller Code-Review, ausgiebiges Testen, usw.|
 
 ### Web-Anwendungen
 
