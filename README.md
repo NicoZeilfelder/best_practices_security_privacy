@@ -64,6 +64,8 @@
 10) Ungeprüfte Um- und Weiterleitung   
    > Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
 
+
+
 ## Gegenmaßnahmen
 
 ### Native Anwendungen
@@ -94,6 +96,11 @@ Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokol
 
 |Kategorie|Native Anwendungen|Web-Anwendungen|
 |---|---|---|
+|Speicher|Angriffe auf Endgeräte, Buffer Overflow, Off-By-One Error, Code Injection, usw.|Code Injection,usw.|
+|Netzwerk|Angriffe auf das Netzwerk, usw.|Cross-Site Request Forgery (CSRF), utzung von Komponenten mit bekannten Schwachstelle, Ungeprüfte Um- und Weiterleitung, usw.|
+|Eingabevalidierung|Buffer Overflow, Code Injection, usw.|Code Injection, Cross Site Scripting (XSS)|
+|Autorisierung||Fehler in der Autorisierung und im Session Management, Unsichere direkte Objektreferenzen, Fehlerhafte Autorisierung auf Anwendungsebene, usw.|
+|Datenintegrität||Sicherheitsrelevante Fehlkonfigurationen, Verlust der Vertraulichkeit sensibler Daten, usw.|
 
 
 ## Literaturverzeichnis
