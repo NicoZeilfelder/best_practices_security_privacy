@@ -16,18 +16,13 @@
 
    > Ein weiteres Problem stellt eine mangelnde Eingabevalidierung dar, welche unabhängig von der genutzten Plattform in etwa gleich häufig vorkommt. Die Nutzung von nativem Quellcode kann in fast jeder Anwendung, zum Beispiel durch das Lesen von Dateien oder auch durch die Datenübertragung über das Netzwerk, eine Sicherheitslücke darstellen. Im Umgang mit nativen Applikationen treten einige besondere Angriffe bzw. Sicherheitslücken gesondert auf.
 
-   * Buffer Overflow   
+   a) a[Buffer Overflow](https://de.wikipedia.org/wiki/Pufferüberlauf)   
 
       	> Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
 
-https://de.wikipedia.org/wiki/Pufferüberlauf
-
-   * Off-By-One Error   
+   b) a[Off-By-One Error](https://de.wikipedia.org/wiki/Off-by-one-Error)   
    
       > Ein Off-By-One Error kann bei nativen Anwendungen auftreten und kennzeichnet sich vor allem dadurch, dass die angegebene Speicher- oder Pufferadresse um den Wert eins von der eigentlichen Adresse abweicht. Dadurch wird die Daten der entsprechenden Speicher-/ Pufferstelle überschrieben und es kommt zum Datenverlust und zu Inkonsistenzen. 
-
-https://de.wikipedia.org/wiki/Off-by-one-Error
-
 
 ### Web-Anwendungen: 
 
@@ -79,6 +74,8 @@ https://de.wikipedia.org/wiki/Off-by-one-Error
 |---|---|
 |Angriffe auf Endgeräte|Speicherung sensibler Daten nur im internen Speicher, Eingabevalidierung, Parametrisierung der Abfragemethoden, Implementierung der Android Application Sandbox, usw.|
 Angriffe auf Netzwerke|Kein Vertrauen in heruntergeladene Daten, sicher Protokolle (z.B. HTTPS statt HTTP), Pinning, usw.|
+|Buffer Overflow||
+|Off-By-One Error||
 
 ### Web-Anwendungen
 
