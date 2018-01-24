@@ -62,7 +62,7 @@
    > Durch Scans oder manuelle Analysen können Angreifer die entsprechende Systemversion von Applikationen identifizieren. Sofern es in der entsprechenden Version etwaige Sicherheitslücken gibt, ist das System durch diese angreifbar.   
    
 10) Ungeprüfte Um- und Weiterleitung   
-   >Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
+      >Umleitung der Aufrufer auf Phishing-Webseiten oder Seiten mit Schadcode.   
 
 
 ## Gegenmaßnahmen
