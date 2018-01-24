@@ -12,16 +12,19 @@
 
    > Eine weitere Alternative in Bezug auf native Anwendungen besteht in einem Angriff über das Netzwerk. Dieser ist aus Sicherheitsaspekten sehr riskant, da hierbei potentiell sensible Daten über das Netzwerk übertragen und abgefangen werden können. Diese Art von Angriffen können sowohl über das Internet als auch lokale Netze, wie z.B. öffentliche bzw. unsichere Wi-Fi Hotspots, mit denen sich die Endgeräte automatisch verbinden, erfolgen. Diese können dazu manipuliert werden, um den Netzwerkverkehr mitzulesen oder um an die Daten der Endanwender zu gelangen.
 
-3. Angriffe zwecks mangelnder Eingabevalidierung
+3. Angriffe zwecks mangelnder Eingabevalidierung   
+
    > Ein weiteres Problem stellt eine mangelnde Eingabevalidierung dar, welche unabhängig von der genutzten Plattform in etwa gleich häufig vorkommt. Die Nutzung von nativem Quellcode kann in fast jeder Anwendung, zum Beispiel durch das Lesen von Dateien oder auch durch die Datenübertragung über das Netzwerk, eine Sicherheitslücke darstellen. Im Umgang mit nativen Applikationen treten einige besondere Angriffe bzw. Sicherheitslücken gesondert auf.
 
-* Buffer Overflow
-   Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
+   * Buffer Overflow   
+
+      	> Bei diesem Angriff wird durch einen Fehler im Programm eine zu große Menge an Daten in den Puffer geschrieben, sodass diese die reservierte Speichermenge deutlich überschreitet. Dies führt dazu, dass nachfolgender Speicherstellen überschrieben werden. Im schlimmsten Fall ist es sogar möglich, das Rücksprungadressen überschrieben werden
 
 https://de.wikipedia.org/wiki/Pufferüberlauf
 
-* Off-By-One Error
-   Ein Off-By-One Error kann bei nativen Anwendungen auftreten und kennzeichnet sich vor allem dadurch, dass die angegebene Speicher- oder Pufferadresse um den Wert eins von der eigentlichen Adresse abweicht. Dadurch wird die Daten der entsprechenden Speicher-/ Pufferstelle überschrieben und es kommt zum Datenverlust und zu Inkonsistenzen. 
+   * Off-By-One Error   
+   
+      > Ein Off-By-One Error kann bei nativen Anwendungen auftreten und kennzeichnet sich vor allem dadurch, dass die angegebene Speicher- oder Pufferadresse um den Wert eins von der eigentlichen Adresse abweicht. Dadurch wird die Daten der entsprechenden Speicher-/ Pufferstelle überschrieben und es kommt zum Datenverlust und zu Inkonsistenzen. 
 
 https://de.wikipedia.org/wiki/Off-by-one-Error
 
